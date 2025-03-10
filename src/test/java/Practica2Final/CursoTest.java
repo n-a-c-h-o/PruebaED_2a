@@ -4,8 +4,8 @@
  */
 package Practica2Final;
 
-import instituto.Curso;
-import instituto.Persona;
+import Practica2Final.Curso;
+import Practica2Final.Persona;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;

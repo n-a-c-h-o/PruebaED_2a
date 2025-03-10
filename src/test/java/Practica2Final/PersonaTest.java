@@ -4,8 +4,8 @@
  */
 package Practica2Final;
 
-import instituto.Nif;
-import instituto.Persona;
+import Practica2Final.Nif;
+import Practica2Final.Persona;
 import java.time.LocalDate;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
