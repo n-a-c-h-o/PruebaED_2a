@@ -72,6 +72,10 @@ public class Persona implements Comparable<Persona> {
         return Period.between(nacimiento, LocalDate.now()).getYears();
     }
 
+    /**
+     * Metodo que retorna un String
+     * @return a
+     */
     @Override
     public String toString() {
         if (nombre.split(" ").length > 1) {
@@ -82,6 +86,11 @@ public class Persona implements Comparable<Persona> {
         }
     }
 
+    /**
+    * Compara dos objetos Persona por su NIF.
+    * @param a Persona
+    * @return true si los NIF son iguales,false si no lo son o si el objeto es null.
+    */
     public boolean equals(Persona a) {
         if (a == null) {
             return false;
@@ -89,6 +98,11 @@ public class Persona implements Comparable<Persona> {
         return a.nif.toString().equals(this.nif.toString());
     }
 
+    /**
+     * Metodo que compara dos objetos para ver si son iguales
+     * @param obj
+     * @return true si los objetos son iguales, false en caso contrario
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -105,9 +119,15 @@ public class Persona implements Comparable<Persona> {
         return Objects.equals(this.nif, other.nif);
     }
 
+    /**
+     * Compara dos objetos NIF y devuelve un valor numerico
+     * @param o Persona
+     * @return valor negativo, cero o positivo dependiendo si el NIF es menor, mayor o igual.
+     */
     @Override
     public int compareTo(Persona o) {
         return this.nif.toString().compareTo(o.nif.toString());
     }
+    
 
 }
